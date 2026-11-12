@@ -1,0 +1,55 @@
+{
+  "fonts": [
+    {
+      "file": "source-han.otf",
+      "url": "https://raw.githubusercontent.com/adobe-fonts/source-han-sans/release/OTF/Korean/SourceHanSansK-Regular.otf",
+      "archive_member": null,
+      "sha256": "14f0ac1c902bdb973136a80c7f45bfcbe0cea9306bee323886dd94d98061941b"
+    },
+    {
+      "file": "jetbrains.ttf",
+      "url": "https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/ttf/JetBrainsMono-Regular.ttf",
+      "archive_member": null,
+      "sha256": "e6fd0d7e91550b3ed2b735d4312474362c4716edc4fc0577a0f61ed782d5aed1"
+    },
+    {
+      "file": "cascadia.ttf",
+      "url": "https://github.com/microsoft/cascadia-code/releases/download/v2407.24/CascadiaCode-2407.24.zip",
+      "archive_member": "ttf/static/CascadiaMono-Regular.ttf",
+      "sha256": "06520d032ec274fa5040b22c6f4a1d829081b24ba40b2da56dae89bf10c7b481"
+    },
+    {
+      "file": "fira.ttf",
+      "url": "https://github.com/tonsky/FiraCode/releases/download/6.2/Fira_Code_v6.2.zip",
+      "archive_member": "ttf/FiraCode-Regular.ttf",
+      "sha256": "5992ab9640e2df491b2f609467b1de60e8bc39b2c28db184342a0592d98f6117"
+    },
+    {
+      "file": "source-han-kr-vf.ttf",
+      "url": "https://raw.githubusercontent.com/adobe-fonts/source-han-sans/release/Variable/TTF/Subset/SourceHanSansKR-VF.ttf",
+      "sha256": "35af3f67cf8c9c6cacd138a6a251b34317af1c601dfef4bc0ef4b64f7aa7a705",
+      "archive_member": null
+    }
+  ],
+  "iosevka": {
+    "repository": "https://github.com/be5invis/Iosevka",
+    "commit": "cea353b17b9b5c6e22da4f0fcae66f16d68a4edf",
+    "build_plan": "iosevka-private-build-plans.toml",
+    "output": "dist/MMCodingIosevka550/TTF-Unhinted/MMCodingIosevka550-Regular.ttf",
+    "sha256": "ad9b05742863869ca869b20bbfe1f44218b4712db73c82f787d7fd4281f21262"
+  },
+  "iosevka_b2": {
+    "repository": "https://github.com/be5invis/Iosevka",
+    "commit": "cea353b17b9b5c6e22da4f0fcae66f16d68a4edf",
+    "build_plan": "iosevka-b2-build-plans.toml",
+    "output": "dist/MMCodingIosevka550B2/TTF-Unhinted/MMCodingIosevka550B2-Regular.ttf",
+    "sha256": "db8f70608b99d94f4235c554ddf2718e18acfe7736c370d1cd6cfb2ed44afc7e"
+  },
+  "iosevka_b3_bold": {
+    "commit": "cea353b17b9b5c6e22da4f0fcae66f16d68a4edf",
+    "build_plan": "iosevka-b3-bold-build-plans.toml",
+    "sha256": "8220617bbdded22289f7250cb78fea29b3865aa508561809fa1c7e85ee1f150e",
+    "repository": "https://github.com/be5invis/Iosevka",
+    "output": "dist/MMCodingIosevka550B3/TTF-Unhinted/MMCodingIosevka550B3-Bold.ttf"
+  }
+}

@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+.DS_Store
+sources/upstream/
+
+# Generated font binaries and self-contained comparison pages
+fonts/
+docs/*.html
+# Machine-local installation inventory
+docs/installed-fonts.json
+# Local credentials and editor state
+.env
+.env.*
+!.env.example
+.agents/
+.codex/
+.aws/

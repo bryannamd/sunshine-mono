@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>한글 코딩 폰트 · 네 가지 시안</title>
+<style>
+/* FONT_FACES */
+:root{color-scheme:light;--bg:#f5f5f2;--paper:#fff;--ink:#202522;--muted:#59615b;--line:#cbd1cb;--accent:#236544;--size:16px;--leading:1.65;--lig:0}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 system-ui,sans-serif}
+body.dark{color-scheme:dark;--bg:#171b19;--paper:#202622;--ink:#e7eee8;--muted:#b0bdb3;--line:#49574d;--accent:#96d5aa}
+main{max-width:1600px;margin:auto;padding:36px 32px 64px}h1{font-size:30px;line-height:1.3;letter-spacing:-.025em;margin:0 0 12px}h2{font-size:18px;margin:0}p{margin:0 0 12px;max-width:76ch}.intro{color:var(--muted)}
+.toolbar{display:flex;align-items:end;gap:16px 24px;flex-wrap:wrap;border-block:1px solid var(--line);padding:18px 0;margin:24px 0}
+label{display:flex;gap:8px;align-items:center;min-height:36px}label.stacked{display:grid;gap:5px;font-size:13px}select,button,input,textarea{font:inherit;accent-color:var(--accent)}select,button{min-height:36px;padding:5px 10px;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink)}button{cursor:pointer}button:hover,select:hover{border-color:var(--accent)}
+input[type=range]{width:110px}output{font-variant-numeric:tabular-nums;min-width:38px}a{color:var(--accent);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}:focus-visible{outline:2px solid var(--accent);outline-offset:4px}::selection{background:#b8dbc3;color:#13271a}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 32px}.specimen{min-width:0;border-top:2px solid var(--ink);padding-top:14px}.specimen header{display:flex;align-items:start;justify-content:space-between;gap:14px}.meta{font-size:12px;color:var(--muted);margin:4px 0 14px;font-variant-numeric:tabular-nums}.download{font-size:12px;white-space:nowrap}
+pre{margin:0;background:var(--paper);padding:22px 18px;overflow:auto;min-height:330px;font-size:var(--size);line-height:var(--leading);font-weight:400;font-style:normal;font-synthesis:none;letter-spacing:0;tab-size:4;white-space:pre;font-feature-settings:"calt" var(--lig),"liga" var(--lig);scrollbar-color:var(--line) var(--paper)}
+.single{grid-template-columns:1fr}.single pre{min-height:350px}.status{font-size:13px;color:var(--muted);margin:0 0 24px}.error{color:#b12922}.notes{margin-top:32px;border-top:1px solid var(--line);padding-top:20px;color:var(--muted);font-size:13px}.notes p{max-width:100ch}details{margin:0 0 24px}summary{cursor:pointer;color:var(--accent);width:fit-content}textarea{display:block;width:100%;min-height:200px;margin:12px 0;padding:14px;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:6px;caret-color:var(--accent);font-family:monospace}footer{margin-top:28px;font-size:13px;color:var(--muted)}[hidden]{display:none!important}
+.license-text{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px;padding:16px 0;max-width:90ch}.package{margin-top:16px;font-size:14px}
+@media(max-width:850px){main{padding:24px 16px 40px}.grid{grid-template-columns:1fr}h1{font-size:25px}.toolbar{gap:12px 18px}pre{padding:18px 12px}.specimen header{flex-wrap:wrap}}
+@media print{.toolbar,details,.download,footer{display:none}.grid{display:block}.specimen{break-inside:avoid;margin-bottom:24px}pre{white-space:pre-wrap;min-height:0}body{background:white;color:black}}
+</style>
+</head>
+<body>
+<main>
+<h1>한글 코딩 폰트, 네 가지 시안</h1>
+<p class="intro">같은 한글에 네 가지 영문을 조합했습니다. 이름을 가리고 첫인상을 고른 뒤, 작은 글자와 긴 주석에서 다시 비교해 보세요.</p>
+<div class="toolbar" aria-label="비교 설정">
+<label class="stacked">글자 크기 <span><input id="size" aria-label="글자 크기" type="range" min="12" max="24" step="1" value="16"> <output id="size-output">16px</output></span></label>
+<label class="stacked">행간 <select id="leading"><option value="1.5">1.5</option><option value="1.65" selected>1.65</option><option value="1.85">1.85</option></select></label>
+<label class="stacked">배경 <select id="theme"><option value="light">밝게</option><option value="dark">어둡게</option></select></label>
+<label class="stacked">샘플 <select id="sample"><option value="code">한영 혼합 코드</option><option value="shapes">문자 구분과 정렬</option><option value="prose">긴 주석과 문장</option><option value="custom">직접 입력</option></select></label>
+<label class="stacked">보기 <select id="view"><option value="all">네 시안 함께</option><option value="A">시안 A</option><option value="B">시안 B</option><option value="C">시안 C</option><option value="D">시안 D</option></select></label>
+<label><input id="blind" type="checkbox"> 이름 가리기</label>
+<label><input id="ligatures" type="checkbox"> 리거처 허용</label>
+</div>
+<p id="status" class="status" role="status">시안 글꼴을 불러오는 중입니다.</p>
+<details id="custom-editor"><summary>비교할 코드 직접 입력</summary><label for="custom">입력한 내용이 네 시안에 똑같이 표시됩니다.</label><textarea id="custom" spellcheck="false" aria-label="비교할 코드"></textarea><button id="apply" type="button">네 시안에 적용</button></details>
+<div id="grid" class="grid"></div>
+<p class="package"><a href="../fonts/prototypes/MMCoding-prototypes-0.1.0.zip" download>네 시안과 라이선스 함께 다운로드</a></p>
+<div class="notes">
+<p><strong>비교 조건</strong> Regular · 같은 크기와 행간 · 같은 한글 윤곽. 영문 폭은 원래 설계를 유지하며, 한글 한 글자는 각 영문의 정확히 두 칸입니다. 영문 폭에 따라 한글 좌우 여백은 달라집니다.</p>
+<p id="hangul-details"></p>
+<p><strong>시안 범위</strong> 현대 한글과 자모를 추가한 초기 비교본입니다. 한글 획 보정·힌팅·Bold/Italic·전체 CJK 대응은 후속 작업입니다. Cascadia Mono는 프로그래밍 리거처가 없는 판입니다. 영문 소문자 높이는 폰트마다 다르므로 같은 16px도 시각적 크기가 다릅니다.</p>
+</div>
+<footer>폰트는 페이지에 포함되어 인터넷 없이도 표시됩니다. <a href="font-comparison.html">기존 세 폰트 비교</a> · <a href="prototype-build.md">시안 구성과 검증 기록</a></footer>
+<details class="notes"><summary>원천 폰트 저작권과 OFL 라이선스</summary><!-- FONT_LICENSES --></details>
+</main>
+<script>
+const manifest = /* FONT_DATA */;
+const samples = {
+code:`// 사용자의 이름을 읽고 결과를 반환합니다.
+const message = "한글과 English의 균형";
+function findUser(users, userId) {
+  const user = users.find(u => u.id === userId);
+  if (user !== undefined && user.score >= 0) {
+    return { name: user.name, 상태: "완료" };
+  }
+  return null; // 값이 없으면 다시 확인합니다.
+}
+
+const total = 1234567890; // 0O 1Il rn m
+// 가나다라 값 꿇 뚫 뷁 힣 · ㄱㄴㄷ ㅏㅓㅗㅜ`,
+shapes:`0 O o Q    1 I l | !    rn m    cl d
+{} [] () <>   : ; , .   ' " \`   / \\ |
+!= !== == === => -> <= >= && || ++ --
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+01234567890123456789012345678901|
+한글한글한글한글한글한글한글한글|
+가각간갇갈감갑값갓강갖같갚갛
+나너노누느니 다더도두드디
+읽 읊 앉 않 꿇 뚫 뷁 쀍 힣
+ㄱㄴㄷㄹㅁㅂㅅㅇㅈㅊㅋㅌㅍㅎ`,
+prose:`// 이름이 같은 사용자라도 식별자는 다릅니다.
+// 변경된 값을 저장하기 전에 입력을 확인합니다.
+// 좁은 영문 옆에서도 한글이 편안하게 읽히나요?
+// English identifiers and 한글 주석을 비교합니다.
+// 가로획과 세로획의 굵기가 고르게 보이나요?
+
+const requestTimeout = 1500;
+const minimumValue = 0.001;
+const 이름 = "김하늘";
+const 결과 = "읽기 쉽고 오래 보아도 편안한 글자";`
+};
+const grid=document.querySelector('#grid');
+for(const item of manifest.fonts){
+ const section=document.createElement('section');section.className='specimen';section.dataset.id=item.id;
+ const header=document.createElement('header');const heading=document.createElement('h2');heading.textContent=`${item.id} · ${item.label}`;heading.dataset.name=item.label;
+ const link=document.createElement('a');link.className='download';link.href=`../fonts/prototypes/${item.ttf}`;link.download=item.ttf;link.textContent='TTF 다운로드';link.setAttribute('aria-label',`${item.label} 시안 TTF 다운로드`);
+ header.append(heading,link);const meta=document.createElement('p');meta.className='meta';meta.textContent=`영문 ${item.cell_em.toFixed(3)}em · 한글 ${(item.cell_em*2).toFixed(3)}em · Regular`;
+ const pre=document.createElement('pre');pre.style.fontFamily=`"${item.family}"`;pre.tabIndex=0;pre.setAttribute('aria-label',`${item.id} 시안 코드`);section.append(header,meta,pre);grid.append(section);
+}
+function renderSample(){const key=document.querySelector('#sample').value;const text=key==='custom'?document.querySelector('#custom').value:samples[key];document.querySelectorAll('pre').forEach(p=>p.textContent=text)}
+document.querySelector('#custom').value=samples.code;renderSample();
+document.querySelector('#size').oninput=e=>{document.documentElement.style.setProperty('--size',e.target.value+'px');document.querySelector('#size-output').value=e.target.value+'px'};
+document.querySelector('#leading').onchange=e=>document.documentElement.style.setProperty('--leading',e.target.value);
+document.querySelector('#theme').onchange=e=>document.body.classList.toggle('dark',e.target.value==='dark');
+document.querySelector('#sample').onchange=e=>{renderSample();if(e.target.value==='custom')document.querySelector('#custom-editor').open=true};
+document.querySelector('#apply').onclick=()=>{document.querySelector('#sample').value='custom';renderSample()};
+document.querySelector('#view').onchange=e=>{grid.classList.toggle('single',e.target.value!=='all');document.querySelectorAll('.specimen').forEach(s=>s.hidden=e.target.value!=='all'&&s.dataset.id!==e.target.value)};
+document.querySelector('#blind').onchange=e=>document.querySelectorAll('.specimen').forEach(s=>{const h=s.querySelector('h2');h.textContent=e.target.checked?`시안 ${s.dataset.id}`:`${s.dataset.id} · ${h.dataset.name}`;s.querySelector('.download').hidden=e.target.checked;s.querySelector('.meta').hidden=e.target.checked});
+document.querySelector('#ligatures').onchange=e=>document.documentElement.style.setProperty('--lig',e.target.checked?'1':'0');
+document.querySelector('#hangul-details').textContent=`한글은 본고딕 K의 현대 한글 11,172자 윤곽 비율 중앙값을 0.85:1로 맞췄습니다. 공통 가로 배율 ${(manifest.hangul.horizontal_scale*100).toFixed(2)}%, 세로 100%이며, 글자마다 따로 늘리거나 줄이지 않았습니다.`;
+Promise.all(manifest.fonts.map(f=>document.fonts.load(`16px "${f.family}"`,'가A0'))).then(result=>{if(result.some(a=>!a.length))throw new Error('missing font');document.querySelector('#status').textContent='네 시안 글꼴 로드 완료 · 실제 생성한 폰트로 표시 중';document.body.dataset.ready='true'}).catch(()=>{const status=document.querySelector('#status');status.textContent='글꼴을 불러오지 못했습니다. 페이지를 다시 열어 주세요.';status.classList.add('error');document.body.dataset.ready='error'});
+</script>
+</body>
+</html>

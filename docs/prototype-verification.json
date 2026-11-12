@@ -1,0 +1,46 @@
+[
+  {
+    "id": "A",
+    "label": "JetBrains Mono",
+    "hangul_count": 11172,
+    "hangul_median_aspect": 0.8498896247240618,
+    "cell_ratio": "1:2",
+    "ascii_outlines_metrics_unchanged": true,
+    "latin_shaping_ligatures_on_off_unchanged": true,
+    "nfc_nfd_hangul_shaping_equal": true,
+    "woff2_cmap_equal": true
+  },
+  {
+    "id": "B",
+    "label": "Iosevka Custom 550",
+    "hangul_count": 11172,
+    "hangul_median_aspect": 0.8498896247240618,
+    "cell_ratio": "1:2",
+    "ascii_outlines_metrics_unchanged": true,
+    "latin_shaping_ligatures_on_off_unchanged": true,
+    "nfc_nfd_hangul_shaping_equal": true,
+    "woff2_cmap_equal": true
+  },
+  {
+    "id": "C",
+    "label": "Cascadia Mono",
+    "hangul_count": 11172,
+    "hangul_median_aspect": 0.850026680896478,
+    "cell_ratio": "1:2",
+    "ascii_outlines_metrics_unchanged": true,
+    "latin_shaping_ligatures_on_off_unchanged": true,
+    "nfc_nfd_hangul_shaping_equal": true,
+    "woff2_cmap_equal": true
+  },
+  {
+    "id": "D",
+    "label": "Fira Code",
+    "hangul_count": 11172,
+    "hangul_median_aspect": 0.849942726231386,
+    "cell_ratio": "1:2",
+    "ascii_outlines_metrics_unchanged": true,
+    "latin_shaping_ligatures_on_off_unchanged": true,
+    "nfc_nfd_hangul_shaping_equal": true,
+    "woff2_cmap_equal": true
+  }
+]

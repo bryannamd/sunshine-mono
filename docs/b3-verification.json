@@ -1,0 +1,52 @@
+[
+  {
+    "style": "Regular",
+    "strict_freetype_renders": 90136,
+    "ligatures_cell_width_verified": [
+      "!=",
+      "!==",
+      "==",
+      "===",
+      "=>",
+      "->",
+      "<=",
+      ">=",
+      "||",
+      "::",
+      ":=",
+      "<=>",
+      "/*",
+      "*/",
+      "//"
+    ],
+    "ascii_outlines_unchanged": true,
+    "hinted_outlines_unchanged": true,
+    "nfc_nfd_equivalent": true,
+    "windows_directwrite_tested": false
+  },
+  {
+    "style": "Bold",
+    "strict_freetype_renders": 90136,
+    "ligatures_cell_width_verified": [
+      "!=",
+      "!==",
+      "==",
+      "===",
+      "=>",
+      "->",
+      "<=",
+      ">=",
+      "||",
+      "::",
+      ":=",
+      "<=>",
+      "/*",
+      "*/",
+      "//"
+    ],
+    "ascii_outlines_unchanged": true,
+    "hinted_outlines_unchanged": true,
+    "nfc_nfd_equivalent": true,
+    "windows_directwrite_tested": false
+  }
+]

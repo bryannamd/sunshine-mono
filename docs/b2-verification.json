@@ -1,0 +1,19 @@
+[
+  {
+    "id": "B2",
+    "label": "Iosevka 550 · 문자 구분 개선",
+    "hangul_count": 11172,
+    "hangul_median_aspect": 0.8498896247240618,
+    "cell_ratio": "1:2",
+    "ascii_outlines_metrics_unchanged": true,
+    "latin_shaping_ligatures_on_off_unchanged": true,
+    "nfc_nfd_hangul_shaping_equal": true,
+    "woff2_cmap_equal": true,
+    "changed_ascii_from_B": [
+      "0",
+      "1",
+      "l"
+    ],
+    "hangul_outlines_unchanged_from_B": true
+  }
+]
