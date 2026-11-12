@@ -5,14 +5,18 @@ import CoreGraphics
 import ImageIO
 import UniformTypeIdentifiers
 let root=URL(fileURLWithPath:FileManager.default.currentDirectoryPath)
+let releaseMode=CommandLine.arguments.contains("--sunshine")
+let fontDirectory=releaseMode ? "fonts/releases/0.3.0" : "fonts/rounded"
+let fontPrefix=releaseMode ? "SunshineMono" : "MMCodingB3"
+let proofPrefix=releaseMode ? "sunshine" : "b3"
 for style in ["Regular","Bold"] {
- let url=root.appendingPathComponent("fonts/rounded/MMCodingB3-\(style).ttf")
+ let url=root.appendingPathComponent("\(fontDirectory)/\(fontPrefix)-\(style).ttf")
  var error:Unmanaged<CFError>?
  guard CTFontManagerRegisterFontsForURL(url as CFURL,.process,&error) else {fatalError("Registration failed: \(String(describing:error))")}
 }
-let regular=CTFontCreateWithName("MMCodingB3-Regular" as CFString,14,nil)
+let regular=CTFontCreateWithName("\(fontPrefix)-Regular" as CFString,14,nil)
 let bold=CTFontCreateCopyWithSymbolicTraits(regular,14,nil,.boldTrait,.boldTrait)!
-assert((CTFontCopyPostScriptName(bold) as String)=="MMCodingB3-Bold")
+assert((CTFontCopyPostScriptName(bold) as String)=="\(fontPrefix)-Bold")
 let sample="한글 값 읽기 난 단 달 맘 밥 뚫 꽉 햇 에헤 Hmn 0O1Il != =>"
 func line(_ text:String,_ font:CTFont)->CTLine {
  return CTLineCreateWithAttributedString(NSAttributedString(string:text,attributes:[NSAttributedString.Key(kCTFontAttributeName as String):font,NSAttributedString.Key(kCTForegroundColorAttributeName as String):CGColor(gray:0.08,alpha:1)]))
@@ -25,13 +29,13 @@ for scale in [1,2] {
  context.setShouldAntialias(true)
  for (column,style) in ["Regular","Bold"].enumerated() {
   for (row,size) in [12,13,14,16,24,26,28,32].enumerated() {
-   let font=CTFontCreateWithName("MMCodingB3-\(style)" as CFString,CGFloat(size),nil)
+   let font=CTFontCreateWithName("\(fontPrefix)-\(style)" as CFString,CGFloat(size),nil)
    let text=line(sample,font)
    let runs=CTLineGetGlyphRuns(text) as! [CTRun]
    for run in runs {
     let attrs=CTRunGetAttributes(run) as NSDictionary
     let used=attrs[kCTFontAttributeName] as! CTFont
-    assert(CTFontCopyPostScriptName(used) as String == "MMCodingB3-\(style)","Unexpected fallback")
+    assert(CTFontCopyPostScriptName(used) as String == "\(fontPrefix)-\(style)","Unexpected fallback")
    }
    let latin=CTLineGetTypographicBounds(line("HH",font),nil,nil,nil)
    let hangul=CTLineGetTypographicBounds(line("한",font),nil,nil,nil)
@@ -46,9 +50,9 @@ for scale in [1,2] {
   }
  }
  let image=context.makeImage()!
- let dest=CGImageDestinationCreateWithURL(root.appendingPathComponent("docs/proofs/b3-coretext-\(scale)x.png") as CFURL,UTType.png.identifier as CFString,1,nil)!
+ let dest=CGImageDestinationCreateWithURL(root.appendingPathComponent("docs/proofs/\(proofPrefix)-coretext-\(scale)x.png") as CFURL,UTType.png.identifier as CFString,1,nil)!
  CGImageDestinationAddImage(dest,image,nil);assert(CGImageDestinationFinalize(dest))
 }
 let data=try JSONSerialization.data(withJSONObject:results,options:[.prettyPrinted,.sortedKeys])
-try data.write(to:root.appendingPathComponent("docs/b3-coretext-verification.json"))
+try data.write(to:root.appendingPathComponent("docs/\(proofPrefix)-coretext-verification.json"))
 print("CoreText: 32 style/size/scale cases passed; native Bold selection; no sample fallback; 2:1 advance")

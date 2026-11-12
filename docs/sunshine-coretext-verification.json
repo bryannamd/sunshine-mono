@@ -1,0 +1,258 @@
+[
+  {
+    "fallback" : false,
+    "hangulOneGlyph" : 13.200000000000001,
+    "latinTwoCells" : 13.200000000000001,
+    "scale" : 1,
+    "size" : 12,
+    "style" : "Regular"
+  },
+  {
+    "fallback" : false,
+    "hangulOneGlyph" : 14.299999999999999,
+    "latinTwoCells" : 14.299999999999999,
+    "scale" : 1,
+    "size" : 13,
+    "style" : "Regular"
+  },
+  {
+    "fallback" : false,
+    "hangulOneGlyph" : 15.4,
+    "latinTwoCells" : 15.4,
+    "scale" : 1,
+    "size" : 14,
+    "style" : "Regular"
+  },
+  {
+    "fallback" : false,
+    "hangulOneGlyph" : 17.600000000000001,
+    "latinTwoCells" : 17.600000000000001,
+    "scale" : 1,
+    "size" : 16,
+    "style" : "Regular"
+  },
+  {
+    "fallback" : false,
+    "hangulOneGlyph" : 26.400000000000002,
+    "latinTwoCells" : 26.400000000000002,
+    "scale" : 1,
+    "size" : 24,
+    "style" : "Regular"
+  },
+  {
+    "fallback" : false,
+    "hangulOneGlyph" : 28.599999999999998,
+    "latinTwoCells" : 28.599999999999998,
+    "scale" : 1,
+    "size" : 26,
+    "style" : "Regular"
+  },
+  {
+    "fallback" : false,
+    "hangulOneGlyph" : 30.800000000000001,
+    "latinTwoCells" : 30.800000000000001,
+    "scale" : 1,
+    "size" : 28,
+    "style" : "Regular"
+  },
+  {
+    "fallback" : false,
+    "hangulOneGlyph" : 35.200000000000003,
+    "latinTwoCells" : 35.200000000000003,
+    "scale" : 1,
+    "size" : 32,
+    "style" : "Regular"
+  },
+  {
+    "fallback" : false,
+    "hangulOneGlyph" : 13.200000000000001,
+    "latinTwoCells" : 13.200000000000001,
+    "scale" : 1,
+    "size" : 12,
+    "style" : "Bold"
+  },
+  {
+    "fallback" : false,
+    "hangulOneGlyph" : 14.299999999999999,
+    "latinTwoCells" : 14.299999999999999,
+    "scale" : 1,
+    "size" : 13,
+    "style" : "Bold"
+  },
+  {
+    "fallback" : false,
+    "hangulOneGlyph" : 15.4,
+    "latinTwoCells" : 15.4,
+    "scale" : 1,
+    "size" : 14,
+    "style" : "Bold"
+  },
+  {
+    "fallback" : false,
+    "hangulOneGlyph" : 17.600000000000001,
+    "latinTwoCells" : 17.600000000000001,
+    "scale" : 1,
+    "size" : 16,
+    "style" : "Bold"
+  },
+  {
+    "fallback" : false,
+    "hangulOneGlyph" : 26.400000000000002,
+    "latinTwoCells" : 26.400000000000002,
+    "scale" : 1,
+    "size" : 24,
+    "style" : "Bold"
+  },
+  {
+    "fallback" : false,
+    "hangulOneGlyph" : 28.599999999999998,
+    "latinTwoCells" : 28.599999999999998,
+    "scale" : 1,
+    "size" : 26,
+    "style" : "Bold"
+  },
+  {
+    "fallback" : false,
+    "hangulOneGlyph" : 30.800000000000001,
+    "latinTwoCells" : 30.800000000000001,
+    "scale" : 1,
+    "size" : 28,
+    "style" : "Bold"
+  },
+  {
+    "fallback" : false,
+    "hangulOneGlyph" : 35.200000000000003,
+    "latinTwoCells" : 35.200000000000003,
+    "scale" : 1,
+    "size" : 32,
+    "style" : "Bold"
+  },
+  {
+    "fallback" : false,
+    "hangulOneGlyph" : 13.200000000000001,
+    "latinTwoCells" : 13.200000000000001,
+    "scale" : 2,
+    "size" : 12,
+    "style" : "Regular"
+  },
+  {
+    "fallback" : false,
+    "hangulOneGlyph" : 14.299999999999999,
+    "latinTwoCells" : 14.299999999999999,
+    "scale" : 2,
+    "size" : 13,
+    "style" : "Regular"
+  },
+  {
+    "fallback" : false,
+    "hangulOneGlyph" : 15.4,
+    "latinTwoCells" : 15.4,
+    "scale" : 2,
+    "size" : 14,
+    "style" : "Regular"
+  },
+  {
+    "fallback" : false,
+    "hangulOneGlyph" : 17.600000000000001,
+    "latinTwoCells" : 17.600000000000001,
+    "scale" : 2,
+    "size" : 16,
+    "style" : "Regular"
+  },
+  {
+    "fallback" : false,
+    "hangulOneGlyph" : 26.400000000000002,
+    "latinTwoCells" : 26.400000000000002,
+    "scale" : 2,
+    "size" : 24,
+    "style" : "Regular"
+  },
+  {
+    "fallback" : false,
+    "hangulOneGlyph" : 28.599999999999998,
+    "latinTwoCells" : 28.599999999999998,
+    "scale" : 2,
+    "size" : 26,
+    "style" : "Regular"
+  },
+  {
+    "fallback" : false,
+    "hangulOneGlyph" : 30.800000000000001,
+    "latinTwoCells" : 30.800000000000001,
+    "scale" : 2,
+    "size" : 28,
+    "style" : "Regular"
+  },
+  {
+    "fallback" : false,
+    "hangulOneGlyph" : 35.200000000000003,
+    "latinTwoCells" : 35.200000000000003,
+    "scale" : 2,
+    "size" : 32,
+    "style" : "Regular"
+  },
+  {
+    "fallback" : false,
+    "hangulOneGlyph" : 13.200000000000001,
+    "latinTwoCells" : 13.200000000000001,
+    "scale" : 2,
+    "size" : 12,
+    "style" : "Bold"
+  },
+  {
+    "fallback" : false,
+    "hangulOneGlyph" : 14.299999999999999,
+    "latinTwoCells" : 14.299999999999999,
+    "scale" : 2,
+    "size" : 13,
+    "style" : "Bold"
+  },
+  {
+    "fallback" : false,
+    "hangulOneGlyph" : 15.4,
+    "latinTwoCells" : 15.4,
+    "scale" : 2,
+    "size" : 14,
+    "style" : "Bold"
+  },
+  {
+    "fallback" : false,
+    "hangulOneGlyph" : 17.600000000000001,
+    "latinTwoCells" : 17.600000000000001,
+    "scale" : 2,
+    "size" : 16,
+    "style" : "Bold"
+  },
+  {
+    "fallback" : false,
+    "hangulOneGlyph" : 26.400000000000002,
+    "latinTwoCells" : 26.400000000000002,
+    "scale" : 2,
+    "size" : 24,
+    "style" : "Bold"
+  },
+  {
+    "fallback" : false,
+    "hangulOneGlyph" : 28.599999999999998,
+    "latinTwoCells" : 28.599999999999998,
+    "scale" : 2,
+    "size" : 26,
+    "style" : "Bold"
+  },
+  {
+    "fallback" : false,
+    "hangulOneGlyph" : 30.800000000000001,
+    "latinTwoCells" : 30.800000000000001,
+    "scale" : 2,
+    "size" : 28,
+    "style" : "Bold"
+  },
+  {
+    "fallback" : false,
+    "hangulOneGlyph" : 35.200000000000003,
+    "latinTwoCells" : 35.200000000000003,
+    "scale" : 2,
+    "size" : 32,
+    "style" : "Bold"
+  }
+]
