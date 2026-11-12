@@ -1,0 +1,1248 @@
+[
+  {
+    "style": "Regular",
+    "all_original_glyphs_and_hints_byte_identical": true,
+    "original_cmap_metrics_and_gpos_preserved": true,
+    "samples": [
+      {
+        "text": "!=",
+        "active": true
+      },
+      {
+        "text": "!==",
+        "active": true
+      },
+      {
+        "text": "==",
+        "active": true
+      },
+      {
+        "text": "===",
+        "active": true
+      },
+      {
+        "text": "=!=",
+        "active": true
+      },
+      {
+        "text": "=:=",
+        "active": true
+      },
+      {
+        "text": "=/=",
+        "active": true
+      },
+      {
+        "text": "<=",
+        "active": true
+      },
+      {
+        "text": ">=",
+        "active": true
+      },
+      {
+        "text": "&&",
+        "active": true
+      },
+      {
+        "text": "&&&",
+        "active": false
+      },
+      {
+        "text": "&=",
+        "active": false
+      },
+      {
+        "text": "++",
+        "active": true
+      },
+      {
+        "text": "+++",
+        "active": true
+      },
+      {
+        "text": "***",
+        "active": true
+      },
+      {
+        "text": ";;",
+        "active": true
+      },
+      {
+        "text": "!!",
+        "active": true
+      },
+      {
+        "text": "??",
+        "active": true
+      },
+      {
+        "text": "???",
+        "active": false
+      },
+      {
+        "text": "?:",
+        "active": false
+      },
+      {
+        "text": "?.",
+        "active": true
+      },
+      {
+        "text": "?=",
+        "active": true
+      },
+      {
+        "text": "<:",
+        "active": true
+      },
+      {
+        "text": ":<",
+        "active": true
+      },
+      {
+        "text": ":>",
+        "active": true
+      },
+      {
+        "text": ">:",
+        "active": true
+      },
+      {
+        "text": "<:<",
+        "active": true
+      },
+      {
+        "text": "<>",
+        "active": true
+      },
+      {
+        "text": "<<<",
+        "active": true
+      },
+      {
+        "text": ">>>",
+        "active": true
+      },
+      {
+        "text": "<<",
+        "active": true
+      },
+      {
+        "text": ">>",
+        "active": true
+      },
+      {
+        "text": "||",
+        "active": true
+      },
+      {
+        "text": "-|",
+        "active": true
+      },
+      {
+        "text": "_|_",
+        "active": true
+      },
+      {
+        "text": "|-",
+        "active": true
+      },
+      {
+        "text": "||-",
+        "active": true
+      },
+      {
+        "text": "|=",
+        "active": false
+      },
+      {
+        "text": "||=",
+        "active": true
+      },
+      {
+        "text": "##",
+        "active": true
+      },
+      {
+        "text": "###",
+        "active": true
+      },
+      {
+        "text": "####",
+        "active": true
+      },
+      {
+        "text": "#{",
+        "active": true
+      },
+      {
+        "text": "#[",
+        "active": true
+      },
+      {
+        "text": "]#",
+        "active": true
+      },
+      {
+        "text": "#(",
+        "active": true
+      },
+      {
+        "text": "#?",
+        "active": true
+      },
+      {
+        "text": "#_",
+        "active": true
+      },
+      {
+        "text": "#_(",
+        "active": true
+      },
+      {
+        "text": "#:",
+        "active": true
+      },
+      {
+        "text": "#!",
+        "active": true
+      },
+      {
+        "text": "#=",
+        "active": true
+      },
+      {
+        "text": "^=",
+        "active": true
+      },
+      {
+        "text": "<$>",
+        "active": true
+      },
+      {
+        "text": "<$",
+        "active": true
+      },
+      {
+        "text": "$>",
+        "active": true
+      },
+      {
+        "text": "<+>",
+        "active": true
+      },
+      {
+        "text": "<+",
+        "active": true
+      },
+      {
+        "text": "+>",
+        "active": true
+      },
+      {
+        "text": "<*>",
+        "active": true
+      },
+      {
+        "text": "<*",
+        "active": true
+      },
+      {
+        "text": "*>",
+        "active": true
+      },
+      {
+        "text": "</",
+        "active": true
+      },
+      {
+        "text": "</>",
+        "active": true
+      },
+      {
+        "text": "/>",
+        "active": true
+      },
+      {
+        "text": "<!--",
+        "active": true
+      },
+      {
+        "text": "<#--",
+        "active": true
+      },
+      {
+        "text": "-->",
+        "active": true
+      },
+      {
+        "text": "->",
+        "active": true
+      },
+      {
+        "text": "->>",
+        "active": true
+      },
+      {
+        "text": "<<-",
+        "active": true
+      },
+      {
+        "text": "<-",
+        "active": true
+      },
+      {
+        "text": "<=<",
+        "active": true
+      },
+      {
+        "text": "=<<",
+        "active": true
+      },
+      {
+        "text": "<<=",
+        "active": true
+      },
+      {
+        "text": "<==",
+        "active": true
+      },
+      {
+        "text": "<=>",
+        "active": true
+      },
+      {
+        "text": "<==>",
+        "active": true
+      },
+      {
+        "text": "==>",
+        "active": true
+      },
+      {
+        "text": "=>",
+        "active": true
+      },
+      {
+        "text": "=>>",
+        "active": true
+      },
+      {
+        "text": ">=>",
+        "active": true
+      },
+      {
+        "text": ">>=",
+        "active": true
+      },
+      {
+        "text": ">>-",
+        "active": true
+      },
+      {
+        "text": ">-",
+        "active": true
+      },
+      {
+        "text": "-<",
+        "active": true
+      },
+      {
+        "text": "-<<",
+        "active": true
+      },
+      {
+        "text": ">->",
+        "active": true
+      },
+      {
+        "text": "<-<",
+        "active": true
+      },
+      {
+        "text": "<-|",
+        "active": true
+      },
+      {
+        "text": "<=|",
+        "active": true
+      },
+      {
+        "text": "|=>",
+        "active": true
+      },
+      {
+        "text": "|->",
+        "active": true
+      },
+      {
+        "text": "<->",
+        "active": true
+      },
+      {
+        "text": "<~~",
+        "active": true
+      },
+      {
+        "text": "<~",
+        "active": true
+      },
+      {
+        "text": "<~>",
+        "active": true
+      },
+      {
+        "text": "~~",
+        "active": true
+      },
+      {
+        "text": "~~>",
+        "active": true
+      },
+      {
+        "text": "~>",
+        "active": true
+      },
+      {
+        "text": "~-",
+        "active": true
+      },
+      {
+        "text": "-~",
+        "active": true
+      },
+      {
+        "text": "~@",
+        "active": true
+      },
+      {
+        "text": "[||]",
+        "active": true
+      },
+      {
+        "text": "|]",
+        "active": true
+      },
+      {
+        "text": "[|",
+        "active": true
+      },
+      {
+        "text": "|}",
+        "active": true
+      },
+      {
+        "text": "{|",
+        "active": true
+      },
+      {
+        "text": "[<",
+        "active": false
+      },
+      {
+        "text": ">]",
+        "active": false
+      },
+      {
+        "text": "|>",
+        "active": true
+      },
+      {
+        "text": "<|",
+        "active": true
+      },
+      {
+        "text": "||>",
+        "active": true
+      },
+      {
+        "text": "<||",
+        "active": true
+      },
+      {
+        "text": "|||>",
+        "active": true
+      },
+      {
+        "text": "<|||",
+        "active": true
+      },
+      {
+        "text": "<|>",
+        "active": true
+      },
+      {
+        "text": "...",
+        "active": true
+      },
+      {
+        "text": "..",
+        "active": true
+      },
+      {
+        "text": ".=",
+        "active": false
+      },
+      {
+        "text": "..<",
+        "active": true
+      },
+      {
+        "text": ".?",
+        "active": true
+      },
+      {
+        "text": "::",
+        "active": true
+      },
+      {
+        "text": ":::",
+        "active": true
+      },
+      {
+        "text": ":=",
+        "active": true
+      },
+      {
+        "text": "::=",
+        "active": true
+      },
+      {
+        "text": ":?",
+        "active": false
+      },
+      {
+        "text": ":?>",
+        "active": false
+      },
+      {
+        "text": "//",
+        "active": true
+      },
+      {
+        "text": "///",
+        "active": true
+      },
+      {
+        "text": "/*",
+        "active": true
+      },
+      {
+        "text": "*/",
+        "active": true
+      },
+      {
+        "text": "/=",
+        "active": true
+      },
+      {
+        "text": "//=",
+        "active": true
+      },
+      {
+        "text": "/==",
+        "active": true
+      },
+      {
+        "text": "@_",
+        "active": false
+      },
+      {
+        "text": "__",
+        "active": true
+      },
+      {
+        "text": "\\",
+        "active": false
+      },
+      {
+        "text": "\\\\",
+        "active": false
+      },
+      {
+        "text": "**",
+        "active": true
+      },
+      {
+        "text": "--",
+        "active": true
+      },
+      {
+        "text": "---",
+        "active": true
+      },
+      {
+        "text": "---->",
+        "active": true
+      },
+      {
+        "text": "<----",
+        "active": true
+      },
+      {
+        "text": "<====>",
+        "active": true
+      },
+      {
+        "text": "=====",
+        "active": true
+      },
+      {
+        "text": "====>",
+        "active": true
+      },
+      {
+        "text": "<---->",
+        "active": true
+      },
+      {
+        "text": "<~~~~>",
+        "active": false
+      }
+    ],
+    "active_samples": 135,
+    "sample_count": 149,
+    "random_operator_runs": 300,
+    "donor_shaping_matched": true,
+    "fixed_cell_width_preserved": true,
+    "imported_glyph_renders": 1368,
+    "fit": {
+      "variable_weight": 422,
+      "x_scale": 0.4583333333333333,
+      "y_scale": 0.4532923865113096,
+      "y_shift": 58.13372489952485,
+      "target_plus_stems": [
+        76,
+        68
+      ],
+      "fitted_plus_stems": [
+        75.97954813639322,
+        68.0
+      ]
+    }
+  },
+  {
+    "style": "Bold",
+    "all_original_glyphs_and_hints_byte_identical": true,
+    "original_cmap_metrics_and_gpos_preserved": true,
+    "samples": [
+      {
+        "text": "!=",
+        "active": true
+      },
+      {
+        "text": "!==",
+        "active": true
+      },
+      {
+        "text": "==",
+        "active": true
+      },
+      {
+        "text": "===",
+        "active": true
+      },
+      {
+        "text": "=!=",
+        "active": true
+      },
+      {
+        "text": "=:=",
+        "active": true
+      },
+      {
+        "text": "=/=",
+        "active": true
+      },
+      {
+        "text": "<=",
+        "active": true
+      },
+      {
+        "text": ">=",
+        "active": true
+      },
+      {
+        "text": "&&",
+        "active": true
+      },
+      {
+        "text": "&&&",
+        "active": false
+      },
+      {
+        "text": "&=",
+        "active": false
+      },
+      {
+        "text": "++",
+        "active": true
+      },
+      {
+        "text": "+++",
+        "active": true
+      },
+      {
+        "text": "***",
+        "active": true
+      },
+      {
+        "text": ";;",
+        "active": true
+      },
+      {
+        "text": "!!",
+        "active": true
+      },
+      {
+        "text": "??",
+        "active": true
+      },
+      {
+        "text": "???",
+        "active": false
+      },
+      {
+        "text": "?:",
+        "active": false
+      },
+      {
+        "text": "?.",
+        "active": true
+      },
+      {
+        "text": "?=",
+        "active": true
+      },
+      {
+        "text": "<:",
+        "active": true
+      },
+      {
+        "text": ":<",
+        "active": true
+      },
+      {
+        "text": ":>",
+        "active": true
+      },
+      {
+        "text": ">:",
+        "active": true
+      },
+      {
+        "text": "<:<",
+        "active": true
+      },
+      {
+        "text": "<>",
+        "active": true
+      },
+      {
+        "text": "<<<",
+        "active": true
+      },
+      {
+        "text": ">>>",
+        "active": true
+      },
+      {
+        "text": "<<",
+        "active": true
+      },
+      {
+        "text": ">>",
+        "active": true
+      },
+      {
+        "text": "||",
+        "active": true
+      },
+      {
+        "text": "-|",
+        "active": true
+      },
+      {
+        "text": "_|_",
+        "active": true
+      },
+      {
+        "text": "|-",
+        "active": true
+      },
+      {
+        "text": "||-",
+        "active": true
+      },
+      {
+        "text": "|=",
+        "active": false
+      },
+      {
+        "text": "||=",
+        "active": true
+      },
+      {
+        "text": "##",
+        "active": true
+      },
+      {
+        "text": "###",
+        "active": true
+      },
+      {
+        "text": "####",
+        "active": true
+      },
+      {
+        "text": "#{",
+        "active": true
+      },
+      {
+        "text": "#[",
+        "active": true
+      },
+      {
+        "text": "]#",
+        "active": true
+      },
+      {
+        "text": "#(",
+        "active": true
+      },
+      {
+        "text": "#?",
+        "active": true
+      },
+      {
+        "text": "#_",
+        "active": true
+      },
+      {
+        "text": "#_(",
+        "active": true
+      },
+      {
+        "text": "#:",
+        "active": true
+      },
+      {
+        "text": "#!",
+        "active": true
+      },
+      {
+        "text": "#=",
+        "active": true
+      },
+      {
+        "text": "^=",
+        "active": true
+      },
+      {
+        "text": "<$>",
+        "active": true
+      },
+      {
+        "text": "<$",
+        "active": true
+      },
+      {
+        "text": "$>",
+        "active": true
+      },
+      {
+        "text": "<+>",
+        "active": true
+      },
+      {
+        "text": "<+",
+        "active": true
+      },
+      {
+        "text": "+>",
+        "active": true
+      },
+      {
+        "text": "<*>",
+        "active": true
+      },
+      {
+        "text": "<*",
+        "active": true
+      },
+      {
+        "text": "*>",
+        "active": true
+      },
+      {
+        "text": "</",
+        "active": true
+      },
+      {
+        "text": "</>",
+        "active": true
+      },
+      {
+        "text": "/>",
+        "active": true
+      },
+      {
+        "text": "<!--",
+        "active": true
+      },
+      {
+        "text": "<#--",
+        "active": true
+      },
+      {
+        "text": "-->",
+        "active": true
+      },
+      {
+        "text": "->",
+        "active": true
+      },
+      {
+        "text": "->>",
+        "active": true
+      },
+      {
+        "text": "<<-",
+        "active": true
+      },
+      {
+        "text": "<-",
+        "active": true
+      },
+      {
+        "text": "<=<",
+        "active": true
+      },
+      {
+        "text": "=<<",
+        "active": true
+      },
+      {
+        "text": "<<=",
+        "active": true
+      },
+      {
+        "text": "<==",
+        "active": true
+      },
+      {
+        "text": "<=>",
+        "active": true
+      },
+      {
+        "text": "<==>",
+        "active": true
+      },
+      {
+        "text": "==>",
+        "active": true
+      },
+      {
+        "text": "=>",
+        "active": true
+      },
+      {
+        "text": "=>>",
+        "active": true
+      },
+      {
+        "text": ">=>",
+        "active": true
+      },
+      {
+        "text": ">>=",
+        "active": true
+      },
+      {
+        "text": ">>-",
+        "active": true
+      },
+      {
+        "text": ">-",
+        "active": true
+      },
+      {
+        "text": "-<",
+        "active": true
+      },
+      {
+        "text": "-<<",
+        "active": true
+      },
+      {
+        "text": ">->",
+        "active": true
+      },
+      {
+        "text": "<-<",
+        "active": true
+      },
+      {
+        "text": "<-|",
+        "active": true
+      },
+      {
+        "text": "<=|",
+        "active": true
+      },
+      {
+        "text": "|=>",
+        "active": true
+      },
+      {
+        "text": "|->",
+        "active": true
+      },
+      {
+        "text": "<->",
+        "active": true
+      },
+      {
+        "text": "<~~",
+        "active": true
+      },
+      {
+        "text": "<~",
+        "active": true
+      },
+      {
+        "text": "<~>",
+        "active": true
+      },
+      {
+        "text": "~~",
+        "active": true
+      },
+      {
+        "text": "~~>",
+        "active": true
+      },
+      {
+        "text": "~>",
+        "active": true
+      },
+      {
+        "text": "~-",
+        "active": true
+      },
+      {
+        "text": "-~",
+        "active": true
+      },
+      {
+        "text": "~@",
+        "active": true
+      },
+      {
+        "text": "[||]",
+        "active": true
+      },
+      {
+        "text": "|]",
+        "active": true
+      },
+      {
+        "text": "[|",
+        "active": true
+      },
+      {
+        "text": "|}",
+        "active": true
+      },
+      {
+        "text": "{|",
+        "active": true
+      },
+      {
+        "text": "[<",
+        "active": false
+      },
+      {
+        "text": ">]",
+        "active": false
+      },
+      {
+        "text": "|>",
+        "active": true
+      },
+      {
+        "text": "<|",
+        "active": true
+      },
+      {
+        "text": "||>",
+        "active": true
+      },
+      {
+        "text": "<||",
+        "active": true
+      },
+      {
+        "text": "|||>",
+        "active": true
+      },
+      {
+        "text": "<|||",
+        "active": true
+      },
+      {
+        "text": "<|>",
+        "active": true
+      },
+      {
+        "text": "...",
+        "active": true
+      },
+      {
+        "text": "..",
+        "active": true
+      },
+      {
+        "text": ".=",
+        "active": false
+      },
+      {
+        "text": "..<",
+        "active": true
+      },
+      {
+        "text": ".?",
+        "active": true
+      },
+      {
+        "text": "::",
+        "active": true
+      },
+      {
+        "text": ":::",
+        "active": true
+      },
+      {
+        "text": ":=",
+        "active": true
+      },
+      {
+        "text": "::=",
+        "active": true
+      },
+      {
+        "text": ":?",
+        "active": false
+      },
+      {
+        "text": ":?>",
+        "active": false
+      },
+      {
+        "text": "//",
+        "active": true
+      },
+      {
+        "text": "///",
+        "active": true
+      },
+      {
+        "text": "/*",
+        "active": true
+      },
+      {
+        "text": "*/",
+        "active": true
+      },
+      {
+        "text": "/=",
+        "active": true
+      },
+      {
+        "text": "//=",
+        "active": true
+      },
+      {
+        "text": "/==",
+        "active": true
+      },
+      {
+        "text": "@_",
+        "active": false
+      },
+      {
+        "text": "__",
+        "active": true
+      },
+      {
+        "text": "\\",
+        "active": false
+      },
+      {
+        "text": "\\\\",
+        "active": false
+      },
+      {
+        "text": "**",
+        "active": true
+      },
+      {
+        "text": "--",
+        "active": true
+      },
+      {
+        "text": "---",
+        "active": true
+      },
+      {
+        "text": "---->",
+        "active": true
+      },
+      {
+        "text": "<----",
+        "active": true
+      },
+      {
+        "text": "<====>",
+        "active": true
+      },
+      {
+        "text": "=====",
+        "active": true
+      },
+      {
+        "text": "====>",
+        "active": true
+      },
+      {
+        "text": "<---->",
+        "active": true
+      },
+      {
+        "text": "<~~~~>",
+        "active": false
+      }
+    ],
+    "active_samples": 135,
+    "sample_count": 149,
+    "random_operator_runs": 300,
+    "donor_shaping_matched": true,
+    "fixed_cell_width_preserved": true,
+    "imported_glyph_renders": 1368,
+    "fit": {
+      "variable_weight": 601,
+      "x_scale": 0.4583333333333333,
+      "y_scale": 0.43198814563780036,
+      "y_shift": 70.52863441930941,
+      "target_plus_stems": [
+        104,
+        90
+      ],
+      "fitted_plus_stems": [
+        103.91804758707681,
+        90.0
+      ]
+    }
+  }
+]

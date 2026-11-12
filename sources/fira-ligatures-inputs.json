@@ -1,0 +1,7 @@
+{
+  "version": "6.2",
+  "url": "https://github.com/tonsky/FiraCode/releases/download/6.2/Fira_Code_v6.2.zip",
+  "member": "variable_ttf/FiraCode-VF.ttf",
+  "sha256": "04149681350f161aca538858b88d17443c586cacca83c165939a13423fe91a26",
+  "license": "licenses/fira-OFL.txt"
+}
