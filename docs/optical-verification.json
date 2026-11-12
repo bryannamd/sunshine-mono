@@ -1,0 +1,34 @@
+[
+  {
+    "style": "Regular",
+    "stem_change_fraction": {
+      "vertical": -0.06094141912566131,
+      "horizontal": -0.0923633873168983
+    },
+    "median_outline_width_before": 768.0,
+    "median_outline_width_after": 795.0,
+    "median_sidebearings_sum_before": 332.0,
+    "median_sidebearings_sum_after": 305.0,
+    "all_11172_hangul_inside_cells": true,
+    "ascii_outlines_and_metrics_unchanged": true,
+    "layout_tables_unchanged": true,
+    "nfc_nfd_equivalent": true,
+    "hinted_outlines_unchanged": true
+  },
+  {
+    "style": "Bold",
+    "stem_change_fraction": {
+      "vertical": -0.057293681212026826,
+      "horizontal": -0.09154673203061148
+    },
+    "median_outline_width_before": 782.0,
+    "median_outline_width_after": 809.0,
+    "median_sidebearings_sum_before": 318.0,
+    "median_sidebearings_sum_after": 291.0,
+    "all_11172_hangul_inside_cells": true,
+    "ascii_outlines_and_metrics_unchanged": true,
+    "layout_tables_unchanged": true,
+    "nfc_nfd_equivalent": true,
+    "hinted_outlines_unchanged": true
+  }
+]

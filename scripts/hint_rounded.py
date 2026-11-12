@@ -73,9 +73,11 @@ def make_hint(glyph,glyf,expected,profile):
     return program,covered
 
 
-def main():
+def main(out=OUT, policies=None):
+    OUT = out
     manifest=json.loads((OUT/"manifest.json").read_text())
-    policies=json.loads((ROOT/"sources/b3-hint-profiles.json").read_text())
+    if policies is None:
+        policies=json.loads((ROOT/"sources/b3-hint-profiles.json").read_text())
     for record in manifest["fonts"]:
         style=record["style"];source=OUT/record["unhinted_ttf"]
         path=OUT/f"MMCodingB3-{style}.ttf"

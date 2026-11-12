@@ -108,7 +108,8 @@ def set_names(font, style, source_copyright):
     font["head"].macStyle = 1 if bold else 0
 
 
-def main():
+def main(out=OUT, ratio=.85, stem_scale=1.0):
+    OUT = out
     OUT.mkdir(parents=True,exist_ok=True)
     variable = TTFont(UP/"source-han-kr-vf.ttf")
     cmap = variable.getBestCmap()
@@ -119,8 +120,8 @@ def main():
         font = TTFont(UP/filename,recalcTimestamp=False)
         target_v,target_h = h_stems(font)
         def score(weight):
-            v,h = mieum_stems(variable.getGlyphSet(location={"wght":weight}),cmap,SX_ESTIMATE)
-            return ((v-target_v)/target_v)**2+((h-target_h)/target_h)**2
+            v,h = mieum_stems(variable.getGlyphSet(location={"wght":weight}),cmap,SX_ESTIMATE*ratio/.85)
+            return ((v-target_v*stem_scale)/target_v)**2+((h-target_h*stem_scale)/target_h)**2
         weight = min(range(300,801),key=score)
         gs = variable.getGlyphSet(location={"wght":weight})
         recordings, boxes = {}, {}
@@ -129,7 +130,7 @@ def main():
             recordings[cp] = pen
             bp=BoundsPen(None);pen.replay(bp);boxes[cp]=bp.bounds
         original_ratio=statistics.median((boxes[cp][2]-boxes[cp][0])/(boxes[cp][3]-boxes[cp][1]) for cp in syllables)
-        sx=.85/original_ratio
+        sx=ratio/original_ratio
         print(style,"Han weight",weight,"Latin stems",(target_v,target_h),"Han stems",mieum_stems(gs,cmap,sx),flush=True)
         order=list(font.getGlyphOrder()); rounded={}
         for cp in cps:

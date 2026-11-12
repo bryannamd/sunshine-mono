@@ -13,21 +13,25 @@ VERSION='0.3.0'
 OUT=ROOT/'fonts/releases'/VERSION
 URL='https://github.com/bryannamd/sunshine-mono'
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
-def main():
+def main(source_dir=None, report_path=None, readme_path=None, extra_licenses=(),
+         source_description='Iosevka and Source Han Sans', extra_credit=''):
  OUT.mkdir(parents=True,exist_ok=True)
  report={'version':VERSION,'family':'Sunshine Mono','credit':'Sunshine Mono by SunWorks','fonts':[], 'windows_directwrite_verified':False,'desktop_apps_verified':False}
  for style in ('Regular','Bold'):
-  source=ROOT/f'fonts/rounded/MMCodingB3-{style}.ttf'
+  source=(source_dir or ROOT/'fonts/rounded')/f'MMCodingB3-{style}.ttf'
   original=TTFont(source,recalcTimestamp=False)
   font=TTFont(source,recalcTimestamp=False);ps=f'SunshineMono-{style}'
   copyright_text=(font['name'].getDebugName(0) or '')+'\nSunshine Mono modifications Copyright 2026 SunWorks.'
   ids={0,1,2,3,4,5,6,8,9,10,11,12,16,17,18,21,22,25}
   font['name'].names=[n for n in font['name'].names if n.nameID not in ids]
-  values={0:copyright_text,1:'Sunshine Mono',2:style,3:f'{VERSION};SunWorks;{ps}',4:f'Sunshine Mono {style}',5:'Version 0.300',6:ps,8:'SunWorks',9:'SunWorks; based on Iosevka by Renzhi Li and Source Han Sans by Adobe',10:'Sunshine Mono by SunWorks. Korean and Latin monospace font for code and terminals.',11:URL,12:URL,16:'Sunshine Mono',17:style}
+  major,minor,patch=map(int,VERSION.split('.'))
+  revision=major+minor/10+patch/1000
+  values={0:copyright_text,1:'Sunshine Mono',2:style,3:f'{VERSION};SunWorks;{ps}',4:f'Sunshine Mono {style}',5:f'Version {revision:.3f}',6:ps,8:'SunWorks',9:'SunWorks; based on Iosevka by Renzhi Li and Source Han Sans by Adobe',10:'Sunshine Mono by SunWorks. Korean and Latin monospace font for code and terminals.',11:URL,12:URL,16:'Sunshine Mono',17:style}
+  values[9]+=extra_credit
   for nid,value in values.items():
    font['name'].setName(value,nid,3,1,0x409)
    font['name'].setName(value,nid,1,0,0)
-  font['head'].fontRevision=.3
+  font['head'].fontRevision=revision
   target=OUT/f'{ps}.ttf';font.save(target)
   font.flavor='woff2';font.save(OUT/f'{ps}.woff2')
   renamed=TTFont(target,recalcTimestamp=False)
@@ -58,11 +62,11 @@ def main():
   report['fonts'].append({'style':style,'ttf':target.name,'sha256':sha(target),'source_b3_sha256':sha(source),'unchanged_tables':unchanged,'strict_freetype_renders':count,'ligatures_verified':list(OPERATORS)})
   print(style,'metadata and unchanged tables verified;',count,'renders passed',flush=True)
  (OUT/'manifest.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
- (ROOT/'docs/sunshine-release-verification.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
- shutil.copy2(ROOT/'docs/sunshine-install.md',OUT/'README.md')
+ (report_path or ROOT/'docs/sunshine-release-verification.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+ shutil.copy2(readme_path or ROOT/'docs/sunshine-install.md',OUT/'README.md')
  (OUT/'licenses').mkdir(exist_ok=True)
- for name in ('iosevka-OFL.txt','source-han-OFL.txt'):shutil.copy2(ROOT/'sources/licenses'/name,OUT/'licenses'/name)
- (OUT/'NOTICE.txt').write_text('Sunshine Mono by SunWorks\nBased on Iosevka and Source Han Sans.\nFont software licensed under SIL Open Font License 1.1.\nOriginal copyrights and license texts are retained in licenses/ and embedded font metadata.\nSource: '+URL+'\n')
+ for name in ('iosevka-OFL.txt','source-han-OFL.txt',*extra_licenses):shutil.copy2(ROOT/'sources/licenses'/name,OUT/'licenses'/name)
+ (OUT/'NOTICE.txt').write_text('Sunshine Mono by SunWorks\nBased on '+source_description+'.\nFont software licensed under SIL Open Font License 1.1.\nOriginal copyrights and license texts are retained in licenses/ and embedded font metadata.\nSource: '+URL+'\n')
  # Explicit allowlist avoids accidentally distributing old or unhinted test fonts.
  files=[OUT/f'SunshineMono-{s}.{ext}' for s in ('Regular','Bold') for ext in ('ttf','woff2')]
  files += [OUT/'README.md',OUT/'NOTICE.txt',OUT/'manifest.json',*sorted((OUT/'licenses').glob('*.txt'))]
