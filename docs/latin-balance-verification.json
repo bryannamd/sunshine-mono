@@ -1,0 +1,156 @@
+[
+  {
+    "style": "Regular",
+    "changed_ascii": "ftlrjJ",
+    "other_ascii_unchanged": true,
+    "hangul_and_jamo_unchanged": true,
+    "advances_unchanged": true,
+    "layout_tables_unchanged": true,
+    "aliases": {
+      "f": [
+        "f",
+        "uniAB35",
+        "uni1D5BF",
+        "uni1D68F",
+        "f.cv41-1",
+        "uni1D5BF.cv41-1"
+      ],
+      "t": [
+        "t",
+        "uni1D5CD",
+        "uni1D69D",
+        "t.cv54-1",
+        "uni1D5CD.cv54-1"
+      ],
+      "r": [
+        "r",
+        "uni1D5CB",
+        "uni1D69B",
+        "r.cv52-1",
+        "uni1D5CB.cv52-1"
+      ],
+      "uni0237": [
+        "uni0237",
+        "uni0237.cv45-2",
+        "uni1D0A.cv20-10"
+      ],
+      "J": [
+        "J",
+        "uni037F",
+        "uni0408",
+        "uni1D679",
+        "J.cv20-2"
+      ],
+      "l": [
+        "l",
+        "uni217C.NWID",
+        "uni1D695",
+        "l.cv47-10"
+      ]
+    },
+    "corner_design": {
+      "f": {
+        "outer_radius": 100,
+        "vertical_stem": 80,
+        "horizontal_stem": 72
+      },
+      "t": {
+        "outer_radius": 100,
+        "vertical_stem": 80,
+        "horizontal_stem": 72
+      },
+      "uni0237": {
+        "outer_radius": 100,
+        "vertical_stem": 80,
+        "horizontal_stem": 72
+      },
+      "J": {
+        "outer_radius": 100,
+        "vertical_stem": 80,
+        "horizontal_stem": 72
+      },
+      "l": {
+        "outer_radius": 100,
+        "vertical_stem": 80,
+        "horizontal_stem": 72
+      }
+    }
+  },
+  {
+    "style": "Bold",
+    "changed_ascii": "ftlrjJ",
+    "other_ascii_unchanged": true,
+    "hangul_and_jamo_unchanged": true,
+    "advances_unchanged": true,
+    "layout_tables_unchanged": true,
+    "aliases": {
+      "f": [
+        "f",
+        "uniAB35",
+        "uni1D5BF",
+        "uni1D68F",
+        "f.cv41-1",
+        "uni1D5BF.cv41-1"
+      ],
+      "t": [
+        "t",
+        "uni1D5CD",
+        "uni1D69D",
+        "t.cv54-1",
+        "uni1D5CD.cv54-1"
+      ],
+      "r": [
+        "r",
+        "uni1D5CB",
+        "uni1D69B",
+        "r.cv52-1",
+        "uni1D5CB.cv52-1"
+      ],
+      "uni0237": [
+        "uni0237",
+        "uni0237.cv45-2",
+        "uni1D0A.cv20-10"
+      ],
+      "J": [
+        "J",
+        "uni037F",
+        "uni0408",
+        "uni1D679",
+        "J.cv20-2"
+      ],
+      "l": [
+        "l",
+        "uni217C.NWID",
+        "uni1D695",
+        "l.cv47-10"
+      ]
+    },
+    "corner_design": {
+      "f": {
+        "outer_radius": 132,
+        "vertical_stem": 115,
+        "horizontal_stem": 98
+      },
+      "t": {
+        "outer_radius": 132,
+        "vertical_stem": 115,
+        "horizontal_stem": 98
+      },
+      "uni0237": {
+        "outer_radius": 132,
+        "vertical_stem": 114,
+        "horizontal_stem": 98
+      },
+      "J": {
+        "outer_radius": 132,
+        "vertical_stem": 115,
+        "horizontal_stem": 98
+      },
+      "l": {
+        "outer_radius": 132,
+        "vertical_stem": 115,
+        "horizontal_stem": 98
+      }
+    }
+  }
+]

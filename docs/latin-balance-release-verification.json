@@ -1,0 +1,93 @@
+{
+  "version": "0.4.2",
+  "family": "Sunshine Mono",
+  "credit": "Sunshine Mono by SunWorks",
+  "fonts": [
+    {
+      "style": "Regular",
+      "ttf": "SunshineMono-Regular.ttf",
+      "sha256": "8121244de101171a905fb9a8677b32346a7db8eedaa5b20defcf4686e19040d2",
+      "source_b3_sha256": "035e3cc8e1263ef4d01ad56927c36cb17a331fea98a311e5d5e66772b3f3c329",
+      "unchanged_tables": [
+        "hhea",
+        "maxp",
+        "OS/2",
+        "hmtx",
+        "cmap",
+        "fpgm",
+        "prep",
+        "cvt ",
+        "loca",
+        "glyf",
+        "post",
+        "gasp",
+        "GDEF",
+        "GPOS",
+        "GSUB",
+        "TTFA"
+      ],
+      "strict_freetype_renders": 90136,
+      "ligatures_verified": [
+        "!=",
+        "!==",
+        "==",
+        "===",
+        "=>",
+        "->",
+        "<=",
+        ">=",
+        "||",
+        "::",
+        ":=",
+        "<=>",
+        "/*",
+        "*/",
+        "//"
+      ]
+    },
+    {
+      "style": "Bold",
+      "ttf": "SunshineMono-Bold.ttf",
+      "sha256": "f0c90b5eeb3f6181a396af7e4cfb85566dfd9b3d9153263229421807fca3a28b",
+      "source_b3_sha256": "6ea35a2f1014c853c8e4246c13b1938815b7e8e71f086070177aaf63d134c473",
+      "unchanged_tables": [
+        "hhea",
+        "maxp",
+        "OS/2",
+        "hmtx",
+        "cmap",
+        "fpgm",
+        "prep",
+        "cvt ",
+        "loca",
+        "glyf",
+        "post",
+        "gasp",
+        "GDEF",
+        "GPOS",
+        "GSUB",
+        "TTFA"
+      ],
+      "strict_freetype_renders": 90136,
+      "ligatures_verified": [
+        "!=",
+        "!==",
+        "==",
+        "===",
+        "=>",
+        "->",
+        "<=",
+        ">=",
+        "||",
+        "::",
+        ":=",
+        "<=>",
+        "/*",
+        "*/",
+        "//"
+      ]
+    }
+  ],
+  "windows_directwrite_verified": false,
+  "desktop_apps_verified": false
+}
