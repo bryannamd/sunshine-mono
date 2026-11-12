@@ -1,0 +1,54 @@
+[
+  {
+    "style": "Regular",
+    "radius": 88,
+    "coverage": {
+      "ㄴ": 399,
+      "ㄵ": 399,
+      "ㄶ": 399,
+      "ㄷ": 399,
+      "ㄹ": 399,
+      "ㄺ": 399,
+      "ㄻ": 399,
+      "ㄼ": 399,
+      "ㄽ": 399,
+      "ㄾ": 399,
+      "ㄿ": 399,
+      "ㅀ": 399,
+      "ㅁ": 399,
+      "ㅂ": 399,
+      "ㅄ": 399
+    },
+    "changed_glyphs": 5985,
+    "changes_confined_to_left_corner": true,
+    "outline_rounding_tolerance_units": 1,
+    "other_glyphs_unchanged": true,
+    "metrics_unchanged": true
+  },
+  {
+    "style": "Bold",
+    "radius": 112,
+    "coverage": {
+      "ㄴ": 399,
+      "ㄵ": 399,
+      "ㄶ": 399,
+      "ㄷ": 399,
+      "ㄹ": 399,
+      "ㄺ": 399,
+      "ㄻ": 399,
+      "ㄼ": 399,
+      "ㄽ": 399,
+      "ㄾ": 399,
+      "ㄿ": 399,
+      "ㅀ": 399,
+      "ㅁ": 399,
+      "ㅂ": 399,
+      "ㅄ": 399
+    },
+    "changed_glyphs": 5985,
+    "changes_confined_to_left_corner": true,
+    "outline_rounding_tolerance_units": 1,
+    "other_glyphs_unchanged": true,
+    "metrics_unchanged": true
+  }
+]
