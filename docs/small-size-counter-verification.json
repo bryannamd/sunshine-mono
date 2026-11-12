@@ -1,0 +1,14 @@
+[
+  {
+    "style": "Regular",
+    "hangul_counter_and_area_checks": 11172,
+    "unchanged_other_glyphs": true,
+    "advances_and_layout_preserved": true
+  },
+  {
+    "style": "Bold",
+    "hangul_counter_and_area_checks": 11172,
+    "unchanged_other_glyphs": true,
+    "advances_and_layout_preserved": true
+  }
+]
